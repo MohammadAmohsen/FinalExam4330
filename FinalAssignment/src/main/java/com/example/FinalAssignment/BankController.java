@@ -26,7 +26,7 @@ public class BankController {
 
     }
 
-    @PostMapping("images/{imageId}/metadata")
+    @PostMapping("/accounts/{ID}/withdrawal")
     public String Withdrawl(@PathVariable Double balance) {
         BankClass bs = null;
         Double current = bs.getBalance();
